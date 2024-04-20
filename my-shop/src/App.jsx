@@ -1,5 +1,6 @@
 import "./App.css";
 import Product from "./components/Product";
+import PaystackPayment from "./pages/payment/Payment";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -16,6 +17,7 @@ function App() {
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Dashboard />}></Route>
         <Route path="/cart" element={<Cart />}></Route>
+        {/* <Route path="/payment" element={<PaystackPayment /> } /> */}
       </Route>
     )
   );
